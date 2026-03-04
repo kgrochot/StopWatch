@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop Watch</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    button:focus {
+        outline: 3px solid #007acc;
+        outline-offset: 2px;
+    }
+    .instructions {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+<div class="stopwatch-card">
+    <h3>Stop Watch</h3>
+    <h1 id="time" aria-live="polite">00:00</h1>
+
+    <div class="button-group">
+        <button id="startBtn" onclick="startClock()" aria-label="Stopwatch starten">Start</button>
+        <button id="stopBtn" onclick="stopClock()" aria-label="Stopwatch stoppen">Stop</button>
+        <button id="resetBtn" onclick="resetClock()" aria-label="Stopwatch zurücksetzen">Reset</button>
+    </div>
+
+    <p class="instructions">
+        Tastenkürzel: <strong>S</strong> = Start, <strong>T</strong> = Stop, <strong>R</strong> = Reset
+    </p>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
