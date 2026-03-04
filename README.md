@@ -1,4 +1,4 @@
-Stop Watch – Modern Card Style
+Stop Watch
 
 A simple Stop Watch built with HTML, CSS, and JavaScript, featuring:
 
